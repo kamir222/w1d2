@@ -7,8 +7,8 @@ function randomDice () {
 
 //call randomDice() a p number of times 
 function numberOfTimes (p) {
-	var input2 = [];
-	for (var i = 1; i < p; i ++) {
+	let input2 = [];
+	for (let i = 1; i < p; i ++) {
 	  input2.push(randomDice());
 	}
 	return 'Rolled ' + p + ' dice: ' + input2;
