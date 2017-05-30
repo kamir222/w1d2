@@ -11,12 +11,16 @@ function randomDice () {
 }
 
 //do the above operation parameter number of times 
-
-
-for (var i = 0; i < parameter; i ++) {
-	console.log(i + ' ' + randomDice() + '\n');
+function numberOfTimes (p) {
+	var input = 'Rolled ' + p + ' dice: ';
+	var input2 = randomDice();
+	for (var i = 1; i < p; i ++) {
+	  input2 += ', ' + randomDice();
+	}
+	return input + input2;
 }
 
+console.log(numberOfTimes(parameter));
 
 
 //print to the console "Rolled n dice: ",  ....
